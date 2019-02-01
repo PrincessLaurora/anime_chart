@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+require "anime_chart"
+
+puts "Vaffanculo"
+
+
+#AnimeChart::CLI.new.call

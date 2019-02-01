@@ -1,6 +1,7 @@
-require "anime_chart/version"
+require 'open-uri'
+require 'nokogiri'
+require 'pry'
 
-module AnimeChart
-  class Error < StandardError; end
-  # Your code goes here...
-end
+require_relative "./anime_chart/version"
+require_relative './anime_chart/anime'
+require_relative './anime_chart/cli'

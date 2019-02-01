@@ -1,0 +1,3 @@
+class AnimeChart::Anime
+
+end

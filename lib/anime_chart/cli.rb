@@ -1,0 +1,6 @@
+class AnimeChart::CLI
+  
+  
+  
+end  
+  
