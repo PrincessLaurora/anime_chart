@@ -16,14 +16,12 @@ class AnimeChart::Anime
     
     game = self.new
     
-    ranks = []
-    positions = doc.css("span.lightLink").text
-    ranks << positions
-    ranks.each do |rank|
-    game.rank = rank  
+    game.rank = doc.css(".rank.ac").text
+    
     game
     binding.pry
-  end  
-end
+  
+    end  
+  
 
 end
