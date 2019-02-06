@@ -47,7 +47,7 @@ class AnimeChart::CLI
     end
     
     def bye
-      puts "Matane!(Goodbye)".colorize(:yellow)
+      puts "Matane!(Goodbye!)".colorize(:yellow)
      exit
     end  
   
