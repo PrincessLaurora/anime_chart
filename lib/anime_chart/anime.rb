@@ -17,20 +17,10 @@ class AnimeChart::Anime
     
     anime.score = list.css("span.text.on").text
     
-    anime.details = list.css("a.hoverinfo_trigger.fl-l.fs14.fw-b").attr("href").text
-    
-    
     chart << anime
     end
     chart
     end
     
     
-  
-    
-    
-  
-  
-
-
 end

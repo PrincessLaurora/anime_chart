@@ -23,8 +23,7 @@ class AnimeChart::CLI
         puts " "
         commands
       elsif input.to_i > 0 && input.to_i < 51
-        details(input)
-        puts " "
+        puts " - "
         commands
       elsif input == "exit"
         bye
@@ -57,15 +56,7 @@ class AnimeChart::CLI
       puts "To exit the program type 'exit'."
     end
 
-    
-    def details(input)
-      @chart = AnimeChart::Anime.scrape_list
-      show = @chart[input.to_i-1]
-      puts "#{input.to_i}) - #{show.name}"
-      puts "Click on the link below to check details of this anime:"
-      puts "#{show.details}".colorize(:red)
-    end
-   
+
 end
 
 
