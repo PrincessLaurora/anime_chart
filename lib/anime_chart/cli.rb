@@ -6,7 +6,7 @@ class AnimeChart::CLI
   end
   
   def welcome
-    puts "Welcome to Anime Chart!"
+    puts "Animechato e yokoso!(Welcome to Anime Chart!)"
   end  
   
   def list_chart
@@ -47,7 +47,7 @@ class AnimeChart::CLI
     end
     
     def bye
-      puts "Matane!".colorize(:yellow)
+      puts "Matane!(Goodbye)".colorize(:yellow)
      exit
     end  
   

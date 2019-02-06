@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["'Laura Felce'"]
   spec.email         = ["'crepu83@yahoo.it'"]
 
-  spec.summary       = "Best anime according to MyAnimeList"
-  spec.description   = "A CLI application that allows to check MyAnimeList top anime chart "
+  spec.summary       = "Best 50 anime according to MyAnimeList"
+  spec.description   = "A CLI application that allows to check MyAnimeList top anime chart"
   spec.homepage      = "https://github.com/PrincessLaurora/anime_chart"
   spec.license       = "MIT"
 
