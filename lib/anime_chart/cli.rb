@@ -1,23 +1,23 @@
 class AnimeChart::CLI
-  
+
   def call
     welcome
     list_chart
   end
-  
+
   def welcome
     puts "Animechato e yokoso!(Welcome to Anime Chart!)"
-  end  
-  
+  end
+
   def list_chart
-    
+
    commands
-       
+
      input = nil
       while input != "exit"
-    
+
       input = gets.strip
-     
+
       if input == "list"
         list
         puts " "
@@ -28,13 +28,13 @@ class AnimeChart::CLI
         commands
       elsif input == "exit"
         bye
-      else 
-        puts "Invalid input, please type 'list', a number between 1 and 50 or tipe 'exit'"
-        end  
+      else
+        puts "Invalid input, please type 'list', a number between 1 and 50 or type 'exit'"
+        end
       end
     end
-    
-  
+
+
     def list
       puts " "
       puts " "
@@ -45,12 +45,12 @@ class AnimeChart::CLI
       puts "#{index}) #{anime.name} ===> SCORE: #{anime.score}".colorize(:yellow)
       end
     end
-    
+
     def bye
       puts "Matane!(Goodbye!)".colorize(:yellow)
      exit
-    end  
-  
+    end
+
     def commands
       puts "To check the 50 top anime on MyAnimeList, type 'list'."
       puts "No time to read the entire list? Type a number between 1 and 50 to check which anime is currently holding that position."
@@ -65,9 +65,7 @@ class AnimeChart::CLI
        puts " "
        puts "Click on the link below to check some details about this anime:"
        puts " "
-       puts "#{show.details}".colorize(:blue) 
-    end  
-    
+       puts "#{show.details}".colorize(:blue)
+    end
+
 end
-
-
